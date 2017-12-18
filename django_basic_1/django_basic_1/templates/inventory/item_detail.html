@@ -1,5 +1,9 @@
 {% extends "base.html" %}
 
+{% block pageTitle %}
+  {{item.title|upper}}
+{% endblock pageTitle %}
+
 {% block content %}
   <a href="{% url 'index' %}">Back to index...</a>
   <h3>{{item.title|capfirst}}</h3>

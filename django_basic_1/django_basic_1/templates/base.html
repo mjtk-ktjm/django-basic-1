@@ -4,7 +4,11 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Inventory Project</title>
+    <title>
+      {% block pageTitle %}
+        Generic Title
+      {% endblock pageTitle %}
+    </title>
     <meta name="description" content="" />
     <link rel="stylesheet" href="{% static 'main.css' %}">
   </head>
